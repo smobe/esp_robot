@@ -25,7 +25,14 @@ echo = machine.Pin(12, machine.Pin.IN)
 adc = machine.ADC(0)
 
 def forward() :
-    ''' make the robot go forward '''
+    ''' make the robot go forwards '''
+    pin1.off()
+    pin2.on()
+    pin3.off()
+    pin4.on()
+
+def backwards() :
+    ''' make the robot go backwards '''
     pin1.on()
     pin2.off()
     pin3.on()
